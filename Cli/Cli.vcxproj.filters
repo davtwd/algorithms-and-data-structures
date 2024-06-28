@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{25b8e80e-3b04-42e5-acc6-864527db4a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{850119fb-8fba-46ab-b7b1-a3e69645026b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="routing">
+      <UniqueIdentifier>{0cd652c9-9e96-457c-bfb7-11f88cc39555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\dsh">
+      <UniqueIdentifier>{6388d34b-9f7f-40d7-80a1-897601edd9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\core">
+      <UniqueIdentifier>{409e706c-2434-4f34-b6ba-8e1ff4d8f616}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="routing\routing_table.cpp">
+      <Filter>routing</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\core\lib.cpp">
+      <Filter>lib\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dsh\dsm.cpp">
+      <Filter>lib\dsh</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\nexthop-table.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\hierarchy_iterator.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\tree_node.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dsh\dst.cpp">
+      <Filter>lib\dsh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="routing\routing_table.h">
+      <Filter>routing</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\core\lib.h">
+      <Filter>lib\core</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\core\structs.h">
+      <Filter>lib\core</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\nexthop-table.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dsh\dsm.h">
+      <Filter>lib\dsh</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\tree_node.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\hierarchy_iterator.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dsh\dst.h">
+      <Filter>lib\dsh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\RT.csv">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="resources\RT-shuffled.csv">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+</Project>
